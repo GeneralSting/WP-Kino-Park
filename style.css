@@ -1,0 +1,150 @@
+/*
+Theme Name: Cinema Park
+Text Domain: Pavo Skocibusic
+Version: 1.0
+Requires at least: 4.7
+Requires PHP: 5.2.4
+Description: Custom theme made for cinema project `Kino Park`.
+Tags: cinema, reservation, bootstrap, seat inspection
+Author: Pavo Skocibusic
+Author URI: https://github.com/GeneralSting//
+Theme URI: https://github.com/GeneralSting/WP-Kino-Park
+License: GNU General Public License v2 or later
+
+Use this theme to make something cool, have fun, and share what you've learned
+with others.
+*/
+
+/*--------------------------------------------------------------
+>>> CONTENT:
+----------------------------------------------------------------
+*/
+
+#full-main-navigation {
+    width: 100%;
+}
+
+#navigation-row {
+    width: 100%;
+}
+
+#navigation-bridge {
+    width: 100%;
+}
+
+.custom-logo {
+    scale: 1.2;
+}
+
+.main-navigation-items {
+    width: 100%;
+}
+
+.secondary-navigation-items {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    margin-bottom: .5rem;
+}
+
+#main-home-navigation {
+    width: 100%;
+    margin-top: 30px;
+    z-index: 9;
+}
+
+#front-page-content {
+    margin-top: 10%;
+}
+
+.footer {
+    background-color: #2A383F;
+    bottom: 0;
+}
+
+.footer-logo {
+    width: 15%;
+    height: 100%;
+    margin-bottom: 16px;
+}
+
+.footer-text {
+    color: #E5DED8;
+}
+
+.single-post-archive {
+    background-color: #E5DED8;
+    box-shadow: -4px 39px 51px 1px rgba(0, 0, 0, 0.87) inset;
+    -webkit-box-shadow: -4px 39px 51px 1px rgba(0, 0, 0, 0.87) inset;
+    -moz-box-shadow: -4px 39px 51px 1px rgba(0, 0, 0, 0.87) inset;
+}
+
+.single-title-archive>a {
+    color: #B88470;
+}
+
+.post-thumbnail {
+    margin-top: 1rem;
+}
+
+.pagination {
+    font-size: 1.5rem;
+}
+
+/*brojevi u paginaciji*/
+.page-numbers {
+    color: #E5DED8;
+}
+
+/*sljedece i prethodno u paginaciji*/
+.next,
+.prev {
+    margin: 0 15px;
+    color: #eee9e4;
+}
+
+/*brojevi u paginaciji*/
+.page-numbers:hover {
+    color: #eee9e4;
+}
+
+/*trenutno oznacana stranica u paginaciji*/
+.current {
+    font-size: 2rem;
+    color: #eee9e4;
+}
+
+/*kada vijesti ne popune visinu stranice footer nije pri dnu*/
+/*ovako ce vijesti imati min visinu te ce footer biti na dnu stranice*/
+.post-article {
+    min-height: 80vh;
+}
+
+.single-post {
+    background-color: #E5DED8;
+    box-shadow: -1px 2px 17px 10px #B88470;
+    -webkit-box-shadow: -1px 2px 17px 10px #B88470;
+    -moz-box-shadow: -1px 2px 17px 10px #B88470;
+    opacity: 0.975;
+}
+
+.single-post-metadata {
+    color: #E5DED8;
+}
+
+.comments-wrapper {
+    margin-bottom: 1rem;
+    background-color: #B88470;
+}
+
+@media(max-width: 990px) {
+    .secondary-navigation-items {
+        display: flex;
+        justify-content: left;
+        margin-left: 2rem;
+    }
+
+    .main-navigation-items>ul>li>a>span {
+        margin-left: 2rem;
+    }
+}
