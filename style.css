@@ -137,6 +137,259 @@ with others.
     background-color: #B88470;
 }
 
+
+.main-movies {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 216, 216, 0.65);
+    /* background-color: rgba(216, 216, 255, 0.65); */
+    padding-bottom: 3rem;
+}
+
+.hr-movies-title {
+    height: 0px;
+    border: none;
+    border-top: 1px solid #2A383F;
+    width: 50%;
+    margin-top: 8px;
+    margin-bottom: 1rem;
+}
+
+.movie-welcome-title {
+    margin-top: 50%;
+    color: #2A383F;
+}
+
+.filter-movie-button {
+    color: #E5DED8;
+    background-color: rgb(57, 78, 89, 0.55);
+}
+
+.filter-movie-button:hover {
+    color: #E5DED8;
+    background-color: rgb(57, 78, 89, 0.9);
+}
+
+.movie-wrapper {
+    border-radius: 30px;
+    background-color: rgb(42, 56, 63, 0.9);
+    color: white;
+    padding: 2rem 0;
+    margin-bottom: 3rem;
+}
+
+.movie-details-wrapper {
+    margin-top: 3rem;
+}
+
+.movie-optional-details {
+    margin-top: 3rem;
+    padding-bottom: 6rem;
+}
+
+.movie-plot-wrapper {
+    margin-top: 2rem;
+    text-align: justify;
+    word-break: keep-all;
+}
+
+.movie-btn-reservation {
+    position: absolute;
+    padding: 1rem 0;
+    bottom: 0;
+    right: 15px;
+    left: 15px;
+    font-size: 1.5rem;
+}
+
+.movie-seats-wrapper {
+    padding-bottom: 5rem;
+}
+
+.seat-type-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.seat-regular,
+.seat-love,
+.seat-disabled,
+.seat-vip,
+.seat-unavailable {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    color: #E5DED8;
+    border-radius: 5px;
+}
+
+.seat-regular {
+    background-color: blue;
+}
+
+.seat-love {
+    background-color: red;
+}
+
+.seat-disabled {
+    background-color: purple;
+}
+
+.seat-vip {
+    background-color: green;
+}
+
+.seat-unavailable {
+    background-color: black;
+}
+
+.movie-modal-seperation {
+    height: 0px;
+    border: none;
+    border-top: 2px solid #2A383F;
+    width: 95%;
+    margin-top: 8px;
+    margin-bottom: 1rem;
+}
+
+.seat-for-movie {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    color: #E5DED8;
+    margin-right: 0.5rem;
+    margin-top: 1rem;
+}
+
+
+.overlay {
+    position: fixed;
+    /* position the element at a fixed position */
+    top: 0;
+    /* top of the screen */
+    left: 0;
+    /* left of the screen */
+    width: 100%;
+    /* width of the screen */
+    height: 100%;
+    /* height of the screen */
+    background-color: rgba(0, 0, 0, 0.8);
+    /* translucent black background color */
+    z-index: 1060;
+    /* high z-index to make sure the element is on top of all other elements */
+    color: white;
+    display: flex;
+    /* use flex layout to center the text */
+    align-items: center;
+    /* center the text vertically */
+    justify-content: center;
+    /* center the text horizontally */
+    font-size: 3rem;
+    display: none;
+}
+
+.main-statistics {
+    margin-top: 1rem;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    /* background-color: rgba(216, 216, 255, 0.65); */
+    padding-bottom: 3rem;
+}
+
+.statistics-movies,
+.statistics-series {
+    margin-top: 2rem;
+}
+
+.border-animation {
+    margin-top: 2rem;
+    height: 100%;
+}
+
+
+.border-animation-start {
+    position: relative;
+}
+
+.border-animation-start::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 0.5rem;
+    height: 0;
+    background-color: rgb(255, 255, 255);
+    animation: border_vertical 5s linear none;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+
+@keyframes border_vertical {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 100%;
+    }
+}
+
+.finished-movies-hr {
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    color: rgba(229, 222, 216, 0.8);
+    font-size: 2rem;
+    margin: 1rem 0px;
+}
+
+.finished-movies-hr::before,
+.finished-movies-hr::after {
+    content: "";
+    flex-grow: 1;
+    background-color: rgba(229, 222, 216, 0.9);
+    height: 3px;
+    font-size: 0px;
+    line-height: 0px;
+    margin: 8px 0.5rem 0;
+}
+
+.movie-statistics-wrapper {
+    border-radius: 30px;
+    background-color: rgb(42, 56, 63, 0.9);
+    color: white;
+    padding: 2rem 0;
+    margin-bottom: 3rem;
+    width: 100%;
+    height: 100%;
+}
+
+.statistics-seat-for-movie {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    color: #E5DED8;
+    margin-right: 0.5rem;
+    margin-top: 1rem;
+}
+
 @media(max-width: 990px) {
     .secondary-navigation-items {
         display: flex;

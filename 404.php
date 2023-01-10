@@ -7,7 +7,7 @@ get_header();
         <!--dodat sadrzaja, stranica je isprazna-->
         <div class="row justify-content-md-center">
             <div class="col-md-auto">
-                <h1>Stranica ne postoji</h1>
+                <h1 style="color: aliceblue; margin-top:10%">Stranica ne postoji</h1>
                 <br/>
                 <?php
                 get_search_form();

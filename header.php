@@ -49,18 +49,33 @@
                         <div class="col-md-5">
                             <?php
                             //glavni navigacijski izbornik, bootstrap i Navwalker
-                            wp_nav_menu(
-                                array(
-                                    'theme_location' => 'primary',
-                                    'depth' => 1,
-                                    'container' => 'div',
-                                    'container_class' => 'main-navigation-items',
-                                    'menu_class' => '',
-                                    'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
-                                    'items_wrap' => make_main_nav_items(),
-                                    'walker' => new WP_Bootstrap_Navwalker(),
-                                )
-                            );
+                            if (user_can(wp_get_current_user(), 'administrator')) {
+                                wp_nav_menu(
+                                    array(
+                                        'theme_location' => 'primary',  //primary-admin
+                                        'depth' => 2,                   //1
+                                        'container' => 'div',
+                                        'container_class' => 'main-navigation-items',
+                                        'menu_class' => '',
+                                        'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
+                                        'items_wrap' => make_main_nav_items(),
+                                        'walker' => new WP_Bootstrap_Navwalker(),
+                                    )
+                                );
+                            } else {
+                                wp_nav_menu(
+                                    array(
+                                        'theme_location' => 'primary',
+                                        'depth' => 1,
+                                        'container' => 'div',
+                                        'container_class' => 'main-navigation-items',
+                                        'menu_class' => '',
+                                        'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
+                                        'items_wrap' => make_main_nav_items(),
+                                        'walker' => new WP_Bootstrap_Navwalker(),
+                                    )
+                                );
+                            }
                             ?>
                         </div>
                     </div>
